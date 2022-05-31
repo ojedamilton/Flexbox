@@ -7,6 +7,7 @@
         <title>formulario</title>
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="./validaciones.js"></script>
     </head>
     <body>
         <div class="container2">
@@ -36,20 +37,26 @@
                         <h2>Formulario</h2>
                     </div>
                     <div class="form-input">
-                        <input type="text" class="input-form" name="" placeholder="Nombre" id="">
+                        <input type="text" class="input-form" onfocus="validateLetterOf(this)"  onblur="validateLetterOb(this)" placeholder=" Nombre" id="nombre">
                     </div>
                     <div class="form-input">
-                        <input type="text" class="input-form" name="" placeholder="Apellido" id="">
+                        <input type="text" class="input-form" onfocus="validateLetterOf(this)"  onblur="validateLetterOb(this)"  placeholder=" Apellido" id="apellido">
                     </div>    
                     <div class="form-input">    
-                        <input type="email" class="input-form" name="" placeholder="Correo electronico" id="">
+                        <input type="email" class="input-form" onfocus="validateEmailOf(this)"  onblur="validateEmailOb(this)"  placeholder=" Correo electronico" id="email">
                     </div>
                     <div class="form-input">     
-                        <input type="password" class="input-form" name="" placeholder="contraseña" id="">
+                        <input type="password" class="input-form" onfocus="validatePasswordOf(this)"  onblur="validatePasswordOb(this)" placeholder=" Contraseña" id="contraseña">
+                    </div> 
+                    <div class="form-input">     
+                        <input type="number" class="input-form" onfocus="validateTelOf(this)"  onblur="validateTelOb(this)"  placeholder=" Telefono" id="telefono">
+                    </div> 
+                    <div class="form-input">     
+                        <input type="text" class="input-form" onfocus="validateAddressOf(this)"  onblur="validateAddressOb(this)" placeholder=" Direccion" id="direccion">
                     </div>    
                     <div class="form-input">
-                        <input type="submit" class="submit-form" name="Enviar" id="" value="Enviar">
-                    </div>    
+                        <input type="submit" class="submit-form" id="enviar" value="Enviar">
+                    </div>  
                 </form>
             </section>    
         </div>    
